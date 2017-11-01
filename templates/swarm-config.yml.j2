@@ -1,0 +1,21 @@
+---
+swarm:
+  logging:
+    file-handlers:
+      FILE:
+        level: DEBUG
+        file:
+          path: axonmulti-server.log
+        formatter: "%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n"
+    console-handlers:
+      CONSOLE:
+        level: ERROR                    
+    loggers:
+      georgeh.test.axonframework.multimaster:
+        level: DEBUG
+    root-logger:
+      level: DEBUG
+      handlers:
+        - FILE
+        - CONSOLE                
+      

@@ -1,0 +1,4 @@
+---
+lxd_containers:
+- name: server-all-in-one
+  groups: "mongodb,application,web"
